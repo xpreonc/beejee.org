@@ -1,0 +1,93 @@
+.content{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.container{
+    display: block;
+    width: 80%;
+}
+/*-------------------------------------------------------*/
+.sidebar{
+    display: flex;
+    flex-flow: column;
+    width: 19%;
+    min-width: 200px;
+    padding:2%;
+    align-items: center;
+    border: 2px groove grey;
+    flex-wrap: wrap;
+}
+.sidebar div{
+    width:200px;
+}
+.sidebar p,.sidebar input{
+    display: flex;
+    width: 100%;
+}
+.sidebar input[type="button"]{
+    width:auto;
+    margin: auto;
+}
+p{
+    margin-bottom: 2px;
+    justify-content: center;
+}
+.sidebar .update{
+    margin-top: 40px;
+    border-top: 1px solid grey;
+}
+.sidebar b{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+/*-------------------------------------------------------*/
+table{
+    display: table;
+    width: 90%;
+}
+table thead tr td{
+    background-color: #c9b2ff;
+    cursor: pointer;
+    height: 30px;
+    padding: 5px 10px;
+}
+table tbody tr {
+    display: none;
+    visibility: hidden;
+}
+table tbody tr td:nth-child(3){
+    width: 300px;
+    word-break: break-all;
+}
+input[type="text"]{
+    background-color: #d5e7ec;
+}
+#pagination{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    justify-content: center;
+}
+#pagination input{
+    margin:2px;
+    cursor: pointer;
+}
+#pagination input:hover{
+    background-color: aqua;
+}
+
+#form_logout, #form_login{
+    display: flex;
+    width: 300px;
+    border: 2px groove grey;
+    margin:20px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#form_login input,#form_login p{
+    display: flex;
+    flex: 0 0 70%;
+}
