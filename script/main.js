@@ -84,7 +84,7 @@ $(document).ready(function($){
     });
 /*------------------------------------------------------------Loging--------------------------------------------------*/
     $('form #login').click(function(){
-        $.post('login.php', {user:$('form #user').val()},function(data){
+        $.post('login.php', {user:$('form #user').val(), password:$('form #passwords').val()},function(data){
             $('#nik_name').val(data);
             if($('#nik_name').val()!='') {
                 $('form#form_logout').css({"visibility": "visible", "display": "flex"});
