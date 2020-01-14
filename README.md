@@ -1,2 +1,2 @@
 # beejee.org
-index.php
+test
